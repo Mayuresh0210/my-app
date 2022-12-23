@@ -7,7 +7,7 @@ function App() {
     <div>
       
 
-      <h1 className=" bg-secondary text-white">External styling</h1>
+      <h1 className=" bg-secondary text-white p-3">External styling</h1>
       
       </div>
   );
