@@ -1,35 +1,23 @@
 
-
 import {useState} from "react";
 
 function App(){
 
-  let [Message , setMessage] = useState("hello world");
+  let [list, setlist] = useState(["delhi", "mumbai", "pune"]);
 
-  let updatemessage = (e)=>{
-
-   Message = (e.target.value);
-    
-    setMessage(Message);
-  };
-
-return(
-
+  return(
   <div>
-    <h1>when to input </h1>
+     <h1>map demo</h1>
 
-    <input type="text" placeholder="enter a message"  value={Message} onChange={updatemessage}/>
-    <input type="button" value="click on"/>
-
-    <h1>{Message}</h1>
-
-
-  </div>
-
+    { list.map((item) => (<h1 className="alert alert-danger">{item}</h1>))}  
+   
+     
+</div>
+  );
   
-
-);
-
+  
+  
+  
 }
 
 export default App;
