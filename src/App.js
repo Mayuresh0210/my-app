@@ -8,7 +8,9 @@ function App(){
 
   let updatemessage = (e)=>{
 
-    setMessage(e.target.value);
+   Message = (e.target.value);
+    
+    setMessage(Message);
   };
 
 return(
